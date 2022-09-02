@@ -1,0 +1,25 @@
+{
+  "name": "puppeteer-stress-test",
+  "version": "1.0.0",
+  "description": "```sh yarn test --maxIteration=10 ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prohetamine/puppeteer-stress-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prohetamine/puppeteer-stress-test/issues"
+  },
+  "homepage": "https://github.com/prohetamine/puppeteer-stress-test#readme",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "path": "^0.12.7",
+    "puppeteer": "^17.1.0",
+    "yargs": "^17.5.1"
+  }
+}
