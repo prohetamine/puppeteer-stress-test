@@ -1,10 +1,13 @@
 const { FakeBrowser } = require('fakebrowser')
     , sleep = require('sleep-promise')
     , path = require('path')
-    , userDataDir = path.resolve(__dirname, './user/fakeBrowserUserData'+Math.random())
+
 
 !(async () => {
     const windowsDD = require('./node_modules/fakebrowser/device-hub-demo/Windows.json')
+    const userDataDir = path.resolve(__dirname, './user/fakeBrowserUserData'+Math.random())
+
+    FakeBrowser.globalConfig.internalHttpServerPort = 17311 + parseInt(Math.random() * 10000)
 
     const builder = new FakeBrowser.Builder()
         .deviceDescriptor(windowsDD)
